@@ -1,5 +1,5 @@
 function hello() {
-    alert("Hola");
+    alert("Hola")
 }
 
 function nuevo(){
