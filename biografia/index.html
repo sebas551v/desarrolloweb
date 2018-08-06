@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>prueba uno</title>
+
+    <!--Agrega Etilos CSS JavaScript-->
+    <link rel="stylesheet" href="style.css"/>
+    
+    <!--Agrega Funciones de JavaScript externas-->
+    <script src="funtions.js"></script>
+
+    <!--Agrega Funciones de JavaScript internas-->
+    <script>
+        function test(){
+            alert('JavaScript desde HTML')
+        }
+    </script>
+</head>
+
+<body>
+    <div id = "myHeader">
+        <!--titulo-->
+        <h1>Mi nombre es Sebastián Ramírez</h1>
+        <!--Lista Desordenada-->
+        <ul>
+            <li> Inicio</li>
+            <li> Sobre Nosotros</li>
+            <li> Contacto</li>
+        </ul>
+    </div>
+
+    <div id = "myContent">
+        <!--parrafo-->
+        <p>actualmente estoy cursando el septimo semestre de ingenieria de sistemas en la universidad de medellin</p>
+        <!--salto de linea-->
+        <br/>
+        <!--separador-->
+        <hr/>
+        <!--inicio de tabla-->
+        <table class="contenedor1">
+            <!--encabezado de la tabla-->
+            <thead>
+                <!--fila-->
+                <tr>
+                    <!--columna-->
+                    <td>CC</td>
+                    <td>NOMBRE</td>
+                    <td>CORREO</td>
+                </tr>
+            </thead>
+            <!--cuerpo de la tabla o contenido-->
+            <tbody>
+                <tr>
+                    <td>1020422376</td>
+                    <td>SebaS</td>
+                    <td>sebas551v@...</td>
+                </tr>
+            </tbody>
+        </table>
+        <!--etiquetas para hipervinculos,poner algo entre las etiquetas-->
+        <a href="https://www.udem.edu.co/">
+            Link UdeM
+        </a>
+        <br/>
+        <!--target es para abrir una pagina en una nueva pestaña-->
+        <a href="https://www.udem.edu.co/" target="_blank">
+            Link UdeM en nueva pestana
+        </a>
+        <!--es un contenedor-->
+        <div class="contenedor1">
+            <h3>contenedores inputs</h3>
+            <form>
+                <input type="text" id="txtName" placeholder="ingrese nombre" required />
+                <input type="password" placeholder="ingrese contrasena" required />
+                <input type="submit" name="" onclick="alert('Desde el HTML')" value="descagar" />
+                <input type="submit" name="" onclick="test()" value="cancelar" />
+                <input type="submit" name="" onclick="nuevo()" value="Hola" />
+            </form>
+        </div>        
+    </div>
+
+    <!--otro contenedor-->
+    <section>
+            <img width="250" src="https://www.atlnacional.com.co/wp-content/uploads/2018/01/loguito-web-e1517588053785.png">
+
+        </section>
+    
+    <!--Lista Desordenada-->
+    <ul id="list1">
+        <li type="square">Item 1</li>
+        <li type="circle">Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <!--Lista Ordenada-->
+    <ol class="list2">
+        <li>Item 1</li>
+        <li>Debe ser el Item #2</li>
+    </ol>
+</body>
+
+</html>
